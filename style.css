@@ -46,14 +46,19 @@ body {
     text-align: center;
 }
 
-.hero {
-    padding: 120px 20px;
-    background: linear-gradient(to bottom, #f7f3ed 60%, #ffffff 100%);
+/* ===== HERO LOGO FIX ===== */
+.logo {
+    width: 180px;        /* adjust between 140–220px if needed */
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
 }
 
-.logo {
-    width: 200px;
-    margin-bottom: 20px;
+/* Better hero spacing */
+.hero {
+    text-align: center;
+    padding: 80px 20px 60px;
 }
 
 h1 {
