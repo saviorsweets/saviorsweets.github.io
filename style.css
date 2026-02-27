@@ -38,9 +38,10 @@
 }
 
 body {
+    line-height: 1.6;
     margin: 0;
     font-family: 'Playfair Display', serif;
-    background-color: #f7f3ed;
+    background-color: #f4efe9;
     color: #4a3b2b;
     text-align: center;
 }
