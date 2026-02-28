@@ -1,96 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Savior Sweets</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Savior Sweets</title>
 
-    <meta name="description" content="Savior Sweets offers heavenly handcrafted cupcakes baked fresh for every occasion. Order delicious cupcakes today.">
-    <meta name="keywords" content="cupcakes, bakery, Savior Sweets, custom cupcakes, Mission Hills bakery">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="images/favicon.png">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar" role="navigation">
-    <div class="nav-container">
-        <div class="brand">Savior Sweets</div>
-        <div class="nav-links">
-            <a href="#flavors">Flavors</a>
-            <a href="#story">Our Story</a>
-            <a href="#gallery">Gallery</a>
-            <a href="order.html" class="nav-order">Order</a>
-        </div>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="brand">Savior Sweets</div>
+
+    <div class="nav-links">
+      <a href="#flavors">Flavors</a>
+      <a href="#story">Our Story</a>
+      <a href="#gallery">Gallery</a>
+      <a href="order.html" class="nav-order">Order</a>
     </div>
+  </div>
 </nav>
 
-<!-- HERO -->
-<header class="hero" role="banner">
-    <img src="images/logo.png" class="logo" alt="Savior Sweets cupcake bakery logo">
-    <h1>Heavenly Cupcakes Made Fresh for Every Occasion</h1>
-    <p>Handcrafted cupcakes baked with love and covered in grace.</p>
-    <div class="buttons">
-        <a href="order.html" class="btn-primary">Order Now</a>
-        <a href="#flavors" class="btn-secondary">View Flavors</a>
-    </div>
+<!-- ================= HERO ================= -->
+<header class="hero">
+
+  <img src="images/logo.png"
+       class="logo"
+       alt="Savior Sweets logo"
+       loading="eager">
+
+  <h1>Heavenly Cupcakes Made Fresh for Every Occasion</h1>
+
+  <p class="hero-sub">
+    Handcrafted cupcakes baked with love and covered in grace.
+  </p>
+
+  <div class="buttons">
+    <a href="order.html" class="btn-primary">Order Now</a>
+    <a href="#flavors" class="btn-secondary">View Flavors</a>
+  </div>
+
 </header>
 
-<!-- FLAVORS -->
+<!-- ================= FLAVORS ================= -->
 <section id="flavors" class="flavors">
-    <h2>Heavenly Featured Flavors</h2>
-    <div class="flavor-grid">
-        <div class="card">
-            <h3>Amazing Grace Vanilla</h3>
-            <p>Classic vanilla with smooth buttercream.</p>
-            <span>$3.50 | $39/dozen</span>
-        </div>
 
-        <div class="card">
-            <h3>Redemption Red Velvet</h3>
-            <p>Rich red velvet with cream cheese frosting.</p>
-            <span>$3.50 | $39/dozen</span>
-        </div>
+  <h2>Heavenly Featured Flavors</h2>
 
-        <div class="card">
-            <h3>Blessed Chocolate Bliss</h3>
-            <p>Deep chocolate topped with chocolate buttercream.</p>
-            <span>$3.50 | $39/dozen</span>
-        </div>
-    </div>
-</section>
+  <div class="flavor-grid">
 
-<!-- STORY -->
-<section id="story" class="story">
-    <h2>Our Story</h2>
-    <p>
-        Savior Sweets began with a simple mission — to bake with purpose,
-        passion, and grace. Every cupcake is handcrafted to bring warmth,
-        comfort, and joy to every occasion.
-    </p>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery" class="gallery">
-    <h2>Photo Gallery</h2>
-    <div class="gallery-grid">
+    <!-- Card 1 -->
+    <div class="card">
+      <picture>
+        <source srcset="images/cupcake1.webp" type="image/webp">
         <img src="images/cupcake1.jpg" alt="Vanilla cupcake">
-        <img src="images/cupcake2.jpg" alt="Red velvet cupcake">
-        <img src="images/cupcake3.jpg" alt="Chocolate cupcake">
+      </picture>
+      <h3>Amazing Grace Vanilla</h3>
+      <p>Classic vanilla with smooth buttercream.</p>
+      <span>$3.50 | $39/dozen</span>
     </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <picture>
+        <source srcset="images/cupcake2.webp" type="image/webp">
+        <img src="images/cupcake2.jpg" alt="Red velvet cupcake">
+      </picture>
+      <h3>Redemption Red Velvet</h3>
+      <p>Rich red velvet with cream cheese frosting.</p>
+      <span>$3.50 | $39/dozen</span>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <picture>
+        <source srcset="images/cupcake3.webp" type="image/webp">
+        <img src="images/cupcake3.jpg" alt="Chocolate cupcake">
+      </picture>
+      <h3>Blessed Chocolate Bliss</h3>
+      <p>Deep chocolate topped with chocolate buttercream.</p>
+      <span>$3.50 | $39/dozen</span>
+    </div>
+
+  </div>
 </section>
 
-<!-- CTA -->
-<section class="cta">
-    <h2>Ready to Taste Heaven?</h2>
-    <a href="order.html" class="btn-primary">Place Your Order</a>
+<!-- ================= STORY ================= -->
+<section id="story" class="story">
+  <h2>Our Story</h2>
+  <p>
+    Savior Sweets began with a simple mission — to bake with purpose,
+    passion, and grace. Every cupcake is handcrafted to bring warmth,
+    comfort, and joy to every occasion.
+  </p>
 </section>
 
-<!-- FOOTER -->
-<footer role="contentinfo">
-    <p>© 2026 Savior Sweets | Baked with Love. Covered in Grace.</p>
+<footer>
+  © 2026 Savior Sweets | Baked with Love. Covered in Grace.
 </footer>
 
 </body>
