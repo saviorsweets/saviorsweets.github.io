@@ -191,19 +191,18 @@ footer {
 
 @media (max-width: 768px) {
 
-  h1 {
-    font-size: 2.2rem;
+  .hero::before {
+    width: 420px;
+    height: 420px;
+    top: -80px;
   }
 
   .logo {
-  width: 260px;
-  max-width: 88%;
-  height: auto;
-  display: block;
-  margin: 0 auto 18px auto;
-}
+    width: 190px;
+  }
 
-  .nav-links {
-    display: none;
+  h1 {
+    font-size: 2.2rem;
+    padding: 0 10px;
   }
 }
