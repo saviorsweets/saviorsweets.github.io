@@ -33,18 +33,21 @@
     <div class="nav-container">
         <div class="brand">Savior Sweets</div>
 
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
             <a href="#flavors">Flavors</a>
             <a href="#story">Our Story</a>
             <a href="#gallery">Gallery</a>
             <a href="order.html" class="nav-order">Order</a>
         </div>
+
+        <!-- 📱 Hamburger -->
+        <div class="hamburger" id="hamburger">☰</div>
     </div>
 </nav>
 
 
 <!-- ========================================
-     🦸 HERO (WITH WOW EFFECT)
+     🦸 HERO
 ======================================== -->
 <header class="hero">
 
@@ -82,19 +85,22 @@
 
     <div class="flavor-grid">
 
-        <div class="card">
+        <div class="card fade-in">
+            <img src="images/cupcake1.jpg" loading="lazy" alt="Vanilla cupcake">
             <h3>Amazing Grace Vanilla</h3>
             <p>Classic vanilla with smooth buttercream.</p>
             <span>$3.50 | $39/dozen</span>
         </div>
 
-        <div class="card">
+        <div class="card fade-in">
+            <img src="images/cupcake2.jpg" loading="lazy" alt="Red velvet cupcake">
             <h3>Redemption Red Velvet</h3>
             <p>Rich red velvet with cream cheese frosting.</p>
             <span>$3.50 | $39/dozen</span>
         </div>
 
-        <div class="card">
+        <div class="card fade-in">
+            <img src="images/cupcake3.jpg" loading="lazy" alt="Chocolate cupcake">
             <h3>Blessed Chocolate Bliss</h3>
             <p>Deep chocolate topped with chocolate buttercream.</p>
             <span>$3.50 | $39/dozen</span>
@@ -107,7 +113,7 @@
 <!-- ========================================
      📖 STORY
 ======================================== -->
-<section id="story" class="story">
+<section id="story" class="story fade-in">
     <h2>Our Story</h2>
     <p>
         Savior Sweets began with a simple mission — to bake with purpose,
@@ -124,10 +130,20 @@
     <h2>Photo Gallery</h2>
 
     <div class="gallery-grid">
-        <img src="images/cupcake1.jpg" loading="lazy" alt="Vanilla cupcake">
-        <img src="images/cupcake2.jpg" loading="lazy" alt="Red velvet cupcake">
-        <img src="images/cupcake3.jpg" loading="lazy" alt="Chocolate cupcake">
+        <img src="images/cupcake1.jpg" loading="lazy" alt="Cupcake gallery image">
+        <img src="images/cupcake2.jpg" loading="lazy" alt="Cupcake gallery image">
+        <img src="images/cupcake3.jpg" loading="lazy" alt="Cupcake gallery image">
     </div>
+</section>
+
+
+<!-- ========================================
+     💰 HIGH-CONVERT CTA
+======================================== -->
+<section class="cta">
+    <h2>Ready to Taste Heaven?</h2>
+    <p>Custom cupcakes for birthdays, events, and sweet cravings.</p>
+    <a href="order.html" class="btn-primary">Place Your Order</a>
 </section>
 
 
@@ -137,6 +153,19 @@
 <footer>
     <p>© 2026 Savior Sweets | Baked with Love. Covered in Grace.</p>
 </footer>
+
+
+<!-- ========================================
+     ⚡ LIGHTWEIGHT JS
+======================================== -->
+<script>
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.onclick = () => {
+    navLinks.classList.toggle('show');
+};
+</script>
 
 </body>
 </html>
