@@ -1,193 +1,84 @@
 /* ========================================
-   SAVIOR SWEETS — MASTER STYLESHEET
+   🚀 SAVIOR SWEETS — NEXT LEVEL POLISH
+   Performance-friendly luxury upgrades
    ======================================== */
 
 
 /* ========================================
-   🎨 BASE / BODY
-   ======================================== */
-
-body {
-    line-height: 1.6;
-    margin: 0;
-    font-family: 'Playfair Display', serif;
-    background-color: #f4efe9;
-    color: #4a3b2b;
-    text-align: center;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-
-/* ========================================
-   🧭 NAVBAR
-   ======================================== */
-
-.navbar {
-    background-color: #f7f3ed;
-    padding: 20px 40px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.brand {
-    font-weight: 600;
-    font-size: 1.3rem;
-}
-
-/* nav links */
-
-.nav-links a {
-    margin-left: 25px;
-    text-decoration: none;
-    color: #4a3b2b;
-    font-weight: 500;
-    transition: color 0.25s ease;
-}
-
-.nav-links a:hover {
-    color: #c79b52;
-}
-
-/* order button in navbar */
-
-.nav-order {
-    background-color: #c79b52;
-    color: white !important;
-    padding: 8px 18px;
-    border-radius: 20px;
-}
-
-
-/* ========================================
-   🦸 HERO SECTION
+   ✨ HERO — SOFT LUXURY BACKGROUND
+   (no image = faster load)
    ======================================== */
 
 .hero {
-    text-align: center;
-    padding: 60px 20px 50px;
-}
-
-/* hero headline */
-
-h1 {
-    font-size: 3rem;
-    margin: 10px 0 12px;
-    font-weight: 600;
-}
-
-/* section headers */
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-/* paragraph text */
-
-p {
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto 20px;
+    background: radial-gradient(
+        circle at top,
+        #fbf7f2 0%,
+        #f4efe9 60%,
+        #efe7de 100%
+    );
 }
 
 
 /* ========================================
-   🧁 LOGO — PREMIUM FIT
+   🧁 HERO SPACING POLISH
    ======================================== */
 
-.logo-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 18px;
+.hero h1 {
+    margin-top: 8px;
+    margin-bottom: 12px;
 }
 
-.logo {
-    width: 300px;          /* ⭐ main size control */
-    max-width: 92%;
-    height: auto;
-    display: block;
+.hero-sub {
+    font-size: 1.15rem;
+    opacity: 0.92;
 }
 
 
 /* ========================================
-   🔘 BUTTONS
+   ✨ FADE-IN ANIMATION (LIGHTWEIGHT)
+   Add class="fade-in" in HTML where desired
    ======================================== */
 
-.buttons {
-    margin-top: 20px;
+.fade-in {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: fadeUp 0.8s ease forwards;
 }
 
-.btn-primary {
-    background-color: #c79b52;
-    color: white;
-    padding: 12px 26px;
-    text-decoration: none;
-    border-radius: 30px;
-    margin: 10px;
-    display: inline-block;
-    transition: all 0.25s ease;
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ========================================
+   🔘 PREMIUM BUTTON FEEL
+   ======================================== */
+
+.btn-primary,
+.btn-secondary {
+    will-change: transform;
 }
 
 .btn-primary:hover {
-    background-color: #b6863f;
     transform: translateY(-2px);
 }
 
-.btn-secondary {
-    border: 2px solid #c79b52;
-    color: #c79b52;
-    padding: 12px 26px;
-    text-decoration: none;
-    border-radius: 30px;
-    margin: 10px;
-    display: inline-block;
-    transition: all 0.25s ease;
-}
-
 .btn-secondary:hover {
-    background-color: #c79b52;
-    color: white;
+    transform: translateY(-2px);
 }
 
 
 /* ========================================
-   🍰 FLAVORS SECTION
+   🍰 CARD HOVER — MORE LUXURY
    ======================================== */
 
-.flavors {
-    padding: 60px 20px;
-    background-color: #fff;
-}
-
-.flavor-grid {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
-
 .card {
-    background-color: #ffffff;
-    padding: 35px;
-    border-radius: 20px;
-    width: 260px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .card:hover {
@@ -197,49 +88,39 @@ p {
 
 
 /* ========================================
-   📖 STORY + GALLERY
+   ✨ TYPOGRAPHY POLISH
    ======================================== */
 
-.story {
-    padding: 60px 20px;
+h1 {
+    letter-spacing: 0.3px;
 }
 
-.gallery {
-    padding: 60px 20px;
-    background-color: #fff;
+h2 {
+    letter-spacing: 0.4px;
+}
+
+/* smoother font rendering */
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 
 /* ========================================
-   🦶 FOOTER
-   ======================================== */
-
-footer {
-    padding: 20px;
-    background-color: #4a3b2b;
-    color: white;
-}
-
-
-/* ========================================
-   📱 MOBILE RESPONSIVE
+   📱 MOBILE MICRO-POLISH
    ======================================== */
 
 @media (max-width: 768px) {
 
-    .logo {
-        width: 200px;
+    /* slightly tighter hero on phones */
+    .hero {
+        padding: 50px 18px 40px;
     }
 
-    h1 {
-        font-size: 2.2rem;
-    }
-
-    .nav-links a {
-        margin-left: 16px;
-    }
-
-    .navbar {
-        padding: 16px 20px;
+    /* improve tap feel */
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 22px;
     }
 }
