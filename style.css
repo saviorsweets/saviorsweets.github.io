@@ -175,16 +175,29 @@ p {
     margin-top: 6px;
 }
 
-/* Logo sizing */
+/* ================= LOGO SIZING & RESPONSIVENESS ================= */
 
 .logo {
-    width: 420px;
-    max-width: 92%;
+    width: 650px;       /* Increased size for Desktop */
+    max-width: 90%;     /* Prevents it from touching the screen edges */
     height: auto;
     display: block;
-    margin: 0 auto 14px auto;
+    margin: 0 auto 20px auto;
+    transition: width 0.3s ease; /* Smooth transition when resizing */
 }
 
+/* ================= MOBILE ADJUSTMENTS ================= */
+
+@media (max-width: 768px) {
+    .logo {
+        width: 320px;   /* Adjusted size for Mobile Screens */
+        margin-bottom: 10px;
+    }
+    
+    h1 {
+        font-size: 2rem; /* Shrinks the text so the logo has more room */
+    }
+}
 
 /* ========================================================
    🔘 BUTTONS
