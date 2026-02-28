@@ -1,208 +1,259 @@
 /* ========================================
-   🌸 GLOBAL
-======================================== */
-
-/* ========================================
-   🌸 LUXURY BACKGROUND
+   🌸 GLOBAL — LUXURY BASE
 ======================================== */
 
 body {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-  color: #4a3b2b;
-  text-align: center;
-  background:
-    radial-gradient(circle at 50% 0%, #ffffff 0%, #f4efe9 55%, #efe7de 100%);
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    color: #4a3b2b;
+    text-align: center;
+    background:
+        radial-gradient(circle at 50% 0%,
+            #ffffff 0%,
+            #f4efe9 55%,
+            #efe7de 100%);
 }
 
 h1 {
-  font-size: 3rem;
-  margin: 20px 0;
+    font-size: 3rem;
+    margin: 20px 0;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
 }
 
 h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 12px;
 }
 
 p {
-  max-width: 600px;
-  margin: 0 auto 20px;
+    max-width: 620px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
 }
+
 
 /* ========================================
    🧭 NAVBAR
 ======================================== */
 
 .navbar {
-  background: #f7f3ed;
-  padding: 20px 40px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+    background: #f7f3ed;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(6px);
 }
 
 .nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1100px;
-  margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .brand {
-  font-family: 'Pinyon Script', cursive;
-  font-size: 32px;
-  color: #8b6a3e;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 32px;
+    color: #8b6a3e;
+    letter-spacing: 0.5px;
 }
 
 .nav-links a {
-  margin-left: 25px;
-  text-decoration: none;
-  color: #4a3b2b;
+    margin-left: 25px;
+    text-decoration: none;
+    color: #4a3b2b;
+    font-weight: 500;
+    transition: color 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: #c79b52;
 }
 
 .nav-order {
-  background: #c79b52;
-  color: white !important;
-  padding: 8px 18px;
-  border-radius: 20px;
+    background: #c79b52;
+    color: white !important;
+    padding: 8px 18px;
+    border-radius: 20px;
 }
 
-/* ========================================
-   🦸 HERO
-======================================== */
 
 /* ========================================
    🦸 HERO — SOFT HALO STYLE
 ======================================== */
 
 .hero {
-  padding: 90px 20px 70px;
-  position: relative;
+    padding: 90px 20px 70px;
+    position: relative;
 }
-
-/* soft glowing backdrop */
 
 .hero::before {
-  content: "";
-  position: absolute;
-  top: -120px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 620px;
-  height: 620px;
-  background: radial-gradient(circle,
-      rgba(255,255,255,0.95) 0%,
-      rgba(255,255,255,0.7) 40%,
-      rgba(255,255,255,0) 70%);
-  z-index: -1;
-  pointer-events: none;
+    content: "";
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 620px;
+    height: 620px;
+    background: radial-gradient(circle,
+        rgba(255,255,255,0.95) 0%,
+        rgba(255,255,255,0.7) 40%,
+        rgba(255,255,255,0) 70%);
+    z-index: -1;
+    pointer-events: none;
 }
+
+/* Logo sizing tuned to your design */
+
+.logo {
+    width: 260px;
+    max-width: 88%;
+    height: auto;
+    display: block;
+    margin: 0 auto 18px auto;
+}
+
 
 /* ========================================
    🔘 BUTTONS
 ======================================== */
 
 .btn-primary {
-  background: #c79b52;
-  color: white;
-  padding: 12px 28px;
-  border-radius: 30px;
-  text-decoration: none;
-  margin: 10px;
-  display: inline-block;
+    background: #c79b52;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    box-shadow: 0 6px 18px rgba(199,155,82,0.25);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #b6863f;
+    transform: translateY(-1px);
 }
 
 .btn-secondary {
-  border: 2px solid #c79b52;
-  color: #c79b52;
-  padding: 12px 28px;
-  border-radius: 30px;
-  text-decoration: none;
-  margin: 10px;
-  display: inline-block;
+    border: 2px solid #c79b52;
+    color: #c79b52;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
 
+.btn-secondary:hover {
+    background: #c79b52;
+    color: white;
+}
+
+
 /* ========================================
-   🧁 FLAVOR CARDS
+   🧁 FLAVOR CARDS — PREMIUM FLOAT
 ======================================== */
 
 .flavors {
-  background: white;
-  padding: 60px 20px;
+    background: #ffffff;
+    padding: 60px 20px;
 }
 
 .flavor-grid {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .card {
-  background: white;
-  width: 260px;
-  padding: 26px;
-  border-radius: 24px;
-  box-shadow:
-    0 18px 40px rgba(0,0,0,0.08),
-    0 2px 6px rgba(0,0,0,0.04);
-  transition: all .35s ease;
+    background: #ffffff;
+    width: 260px;
+    padding: 26px;
+    border-radius: 24px;
+    box-shadow:
+        0 18px 40px rgba(0,0,0,0.08),
+        0 2px 6px rgba(0,0,0,0.04);
+    transition: all .35s ease;
 }
 
 .card:hover {
-  transform: translateY(-10px) scale(1.01);
-  box-shadow:
-    0 28px 60px rgba(0,0,0,0.12),
-    0 6px 16px rgba(0,0,0,0.08);
+    transform: translateY(-10px) scale(1.01);
+    box-shadow:
+        0 28px 60px rgba(0,0,0,0.12),
+        0 6px 16px rgba(0,0,0,0.08);
 }
 
 .card img {
-  width: 100%;
-  border-radius: 14px;
-  aspect-ratio: 4/3;
-  object-fit: cover;
-  margin-bottom: 12px;
+    width: 100%;
+    border-radius: 14px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    margin-bottom: 12px;
+    display: block;
 }
+
 
 /* ========================================
    📖 STORY
 ======================================== */
 
 .story {
-  padding: 60px 20px;
+    padding: 60px 20px;
 }
+
 
 /* ========================================
    🦶 FOOTER
 ======================================== */
 
 footer {
-  background: #4a3b2b;
-  color: white;
-  padding: 20px;
+    background: #4a3b2b;
+    color: white;
+    padding: 20px;
 }
 
+
 /* ========================================
-   📱 MOBILE
+   📱 MOBILE OPTIMIZATION
 ======================================== */
 
 @media (max-width: 768px) {
 
-  .hero::before {
-    width: 420px;
-    height: 420px;
-    top: -80px;
-  }
+    .hero::before {
+        width: 420px;
+        height: 420px;
+        top: -80px;
+    }
 
-  .logo {
-    width: 190px;
-  }
+    .logo {
+        width: 190px;
+    }
 
-  h1 {
-    font-size: 2.2rem;
-    padding: 0 10px;
-  }
+    h1 {
+        font-size: 2.2rem;
+        padding: 0 10px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .logo {
+        width: 170px;
+    }
+
+    .hero {
+        padding-top: 60px;
+    }
 }
