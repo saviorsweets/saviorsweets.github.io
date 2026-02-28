@@ -56,58 +56,6 @@ p {
 }
 
 /* ========================================
-   ✨ NAVBAR SCRIPT — LOGO MATCH
-======================================== */
-
-.brand {
-    font-family: 'Pinyon Script', cursive;
-    font-size: 40px;
-    line-height: 1;
-    letter-spacing: 0.2px;
-    display: inline-flex;
-    align-items: baseline;
-    white-space: nowrap;
-}
-
-/* GOLD — Savior */
-
-.brand-gold {
-    background: linear-gradient(
-        180deg,
-        #c6924a 0%,
-        #a86c25 60%,
-        #8f5a1c 100%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-
-    /* subtle depth */
-    text-shadow:
-        0 1px 0 rgba(0,0,0,0.05),
-        0 2px 4px rgba(0,0,0,0.08);
-}
-
-/* PINK — Sweets */
-
-.brand-pink {
-    background: linear-gradient(
-        180deg,
-        #f3a0a8 0%,
-        #e67882 60%,
-        #d96570 100%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-
-    text-shadow:
-        0 1px 0 rgba(0,0,0,0.05),
-        0 2px 4px rgba(0,0,0,0.08);
-}
-
-
-/* ========================================
    🦸 HERO — SOFT HALO STYLE
 ======================================== */
 
@@ -305,23 +253,24 @@ footer {
 
 .brand {
     font-family: 'Pinyon Script', cursive;
-    font-size: 40px;
-    line-height: 1;
-    letter-spacing: 0.2px;
+    font-size: 46px;          /* slightly larger for elegance */
+    line-height: 0.88;
+    letter-spacing: -0.5px;   /* tighter script flow */
     display: inline-flex;
     align-items: baseline;
     white-space: nowrap;
+    transform: translateY(3px); /* better optical alignment */
 }
 
 /* GOLD — Savior */
 
 .brand-gold {
     background: linear-gradient(
-        180deg,
-        #c6924a 0%,
-        #a86c25 60%,
-        #8f5a1c 100%
-    );
+    180deg,
+    #d2a25a 0%,
+    #b7792e 55%,
+    #8f5a1c 100%
+);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -334,11 +283,11 @@ footer {
 
 .brand-pink {
     background: linear-gradient(
-        180deg,
-        #f3a0a8 0%,
-        #e67882 60%,
-        #d96570 100%
-    );
+    180deg,
+    #f5a3ab 0%,
+    #e67882 55%,
+    #d96570 100%
+);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
