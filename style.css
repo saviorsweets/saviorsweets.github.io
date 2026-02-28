@@ -57,11 +57,12 @@ p {
 
 .brand {
     font-family: 'Pinyon Script', cursive;
-    font-size: 34px;
+    font-size: 36px;
     font-weight: 400;
-    color: #b8833b; /* warmer gold to match logo */
-    letter-spacing: 0.6px;
+    color: #b7792e; /* closer to logo gold */
+    letter-spacing: 0.4px;
     line-height: 1;
+    transform: translateY(2px); /* optical alignment */
 }
 
 .nav-links a {
@@ -112,11 +113,11 @@ p {
 /* Logo sizing tuned to your design */
 
 .logo {
-    width: 300px;          /* larger = more premium */
+    width: 360px;          /* ← premium desktop size */
     max-width: 92%;
     height: auto;
     display: block;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 12px auto;
 }
 
 
@@ -236,8 +237,8 @@ footer {
     }
 
     .logo {
-       width: 210px;
-    }
+    width: 240px;
+}
 
     h1 {
         font-size: 2.2rem;
@@ -252,8 +253,8 @@ footer {
 @media (max-width: 420px) {
 
     .logo {
-       width: 185px;
-    }
+    width: 210px;
+}
 
     .hero {
         padding-top: 60px;
