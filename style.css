@@ -259,3 +259,82 @@ footer {
         display: block;
     }
 }
+
+/* ========================================
+   ⚡ PERFORMANCE PROTECT PATCH
+   Keeps luxury feel while optimizing speed
+   ======================================== */
+
+
+/* ========================================
+   📱 MOBILE GPU SAFETY
+   (reduces heavy blur on lower-power devices)
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    /* remove expensive backdrop blur on phones */
+    .navbar {
+        backdrop-filter: none;
+        background-color: rgba(247, 243, 237, 0.98);
+    }
+
+    /* slightly reduce glow intensity */
+    .logo-glow {
+        filter: blur(28px);
+        opacity: 0.85;
+    }
+}
+
+
+/* ========================================
+   💻 DESKTOP MICRO-OPTIMIZATION
+   (keeps glow but slightly cheaper)
+   ======================================== */
+
+.logo-glow {
+    filter: blur(34px); /* was heavier before */
+}
+
+
+/* ========================================
+   ⚡ ANIMATION PERFORMANCE HINTS
+   ======================================== */
+
+.fade-in {
+    will-change: opacity, transform;
+}
+
+
+/* ========================================
+   🖼️ IMAGE RENDERING IMPROVEMENT
+   ======================================== */
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+/* ========================================
+   🧠 REDUCE MOTION FOR ACCESSIBILITY
+   (and saves battery on some devices)
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .fade-in {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+    .btn-primary:hover,
+    .btn-secondary:hover {
+        transform: none;
+    }
+}
