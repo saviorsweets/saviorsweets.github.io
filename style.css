@@ -2,12 +2,17 @@
    🌸 GLOBAL
 ======================================== */
 
+/* ========================================
+   🌸 LUXURY BACKGROUND
+======================================== */
+
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
-  background: #f4efe9;
   color: #4a3b2b;
   text-align: center;
+  background:
+    radial-gradient(circle at 50% 0%, #ffffff 0%, #f4efe9 55%, #efe7de 100%);
 }
 
 h1 {
@@ -68,18 +73,31 @@ p {
    🦸 HERO
 ======================================== */
 
+/* ========================================
+   🦸 HERO — SOFT HALO STYLE
+======================================== */
+
 .hero {
-  padding: 80px 20px 60px;
+  padding: 90px 20px 70px;
+  position: relative;
 }
 
-.logo {
-  width: 240px;
-  max-width: 90%;
-  margin-bottom: 20px;
-}
+/* soft glowing backdrop */
 
-.hero-sub {
-  font-size: 1.1rem;
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 620px;
+  height: 620px;
+  background: radial-gradient(circle,
+      rgba(255,255,255,0.95) 0%,
+      rgba(255,255,255,0.7) 40%,
+      rgba(255,255,255,0) 70%);
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* ========================================
@@ -126,14 +144,19 @@ p {
 .card {
   background: white;
   width: 260px;
-  padding: 25px;
-  border-radius: 22px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-  transition: .3s ease;
+  padding: 26px;
+  border-radius: 24px;
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.08),
+    0 2px 6px rgba(0,0,0,0.04);
+  transition: all .35s ease;
 }
 
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px) scale(1.01);
+  box-shadow:
+    0 28px 60px rgba(0,0,0,0.12),
+    0 6px 16px rgba(0,0,0,0.08);
 }
 
 .card img {
@@ -173,8 +196,12 @@ footer {
   }
 
   .logo {
-    width: 180px;
-  }
+  width: 260px;
+  max-width: 88%;
+  height: auto;
+  display: block;
+  margin: 0 auto 18px auto;
+}
 
   .nav-links {
     display: none;
