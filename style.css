@@ -1,6 +1,11 @@
 /* ========================================
-   🎨 GLOBAL STYLES
-======================================== */
+   SAVIOR SWEETS — MASTER STYLESHEET
+   ======================================== */
+
+
+/* ========================================
+   🎨 BASE / BODY
+   ======================================== */
 
 body {
     line-height: 1.6;
@@ -11,29 +16,14 @@ body {
     text-align: center;
 }
 
-h1 {
-    font-size: 3rem;
-    margin: 20px 0;
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    line-height: 1.2;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto 20px;
+html {
+    scroll-behavior: smooth;
 }
 
 
 /* ========================================
    🧭 NAVBAR
-======================================== */
+   ======================================== */
 
 .navbar {
     background-color: #f7f3ed;
@@ -41,6 +31,7 @@ p {
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
 }
 
 .nav-container {
@@ -51,14 +42,12 @@ p {
     margin: auto;
 }
 
-/* Brand matches logo script */
-
 .brand {
-    font-family: 'Pinyon Script', cursive;
-    font-size: 30px;
-    color: #8b6a3e;
-    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-size: 1.3rem;
 }
+
+/* nav links */
 
 .nav-links a {
     margin-left: 25px;
@@ -72,6 +61,8 @@ p {
     color: #c79b52;
 }
 
+/* order button in navbar */
+
 .nav-order {
     background-color: #c79b52;
     color: white !important;
@@ -81,58 +72,90 @@ p {
 
 
 /* ========================================
-   🦸 HERO
-======================================== */
+   🦸 HERO SECTION
+   ======================================== */
 
 .hero {
     text-align: center;
-    padding: 80px 20px 60px;
+    padding: 60px 20px 50px;
 }
 
-/* Logo — optimized size */
+/* hero headline */
+
+h1 {
+    font-size: 3rem;
+    margin: 10px 0 12px;
+    font-weight: 600;
+}
+
+/* section headers */
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* paragraph text */
+
+p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+
+/* ========================================
+   🧁 LOGO — PREMIUM FIT
+   ======================================== */
+
+.logo-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
 
 .logo {
-    width: 260px;
-    max-width: 88%;
+    width: 300px;          /* ⭐ main size control */
+    max-width: 92%;
     height: auto;
     display: block;
-    margin: 0 auto 20px auto;
-}
-
-.buttons {
-    margin-top: 20px;
 }
 
 
 /* ========================================
    🔘 BUTTONS
-======================================== */
+   ======================================== */
+
+.buttons {
+    margin-top: 20px;
+}
 
 .btn-primary {
     background-color: #c79b52;
     color: white;
-    padding: 12px 25px;
+    padding: 12px 26px;
     text-decoration: none;
     border-radius: 30px;
     margin: 10px;
     display: inline-block;
-    box-shadow: 0 6px 18px rgba(199,155,82,0.25);
-    transition: all 0.3s ease;
+    transition: all 0.25s ease;
 }
 
 .btn-primary:hover {
     background-color: #b6863f;
+    transform: translateY(-2px);
 }
 
 .btn-secondary {
     border: 2px solid #c79b52;
     color: #c79b52;
-    padding: 12px 25px;
+    padding: 12px 26px;
     text-decoration: none;
     border-radius: 30px;
     margin: 10px;
     display: inline-block;
-    transition: all 0.3s ease;
+    transition: all 0.25s ease;
 }
 
 .btn-secondary:hover {
@@ -142,12 +165,12 @@ p {
 
 
 /* ========================================
-   🧁 FLAVORS
-======================================== */
+   🍰 FLAVORS SECTION
+   ======================================== */
 
 .flavors {
     padding: 60px 20px;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .flavor-grid {
@@ -158,65 +181,38 @@ p {
     margin-top: 40px;
 }
 
-/* Card */
-
 .card {
     background-color: #ffffff;
     padding: 35px;
     border-radius: 20px;
     width: 260px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-    transition:
-        transform 0.28s ease,
-        box-shadow 0.28s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 22px 48px rgba(0,0,0,0.12);
-}
-
-/* Card images */
-
-.card img {
-    width: 100%;
-    border-radius: 14px;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    margin-bottom: 14px;
-    display: block;
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(0,0,0,0.10);
 }
 
 
 /* ========================================
-   📖 STORY
-======================================== */
+   📖 STORY + GALLERY
+   ======================================== */
 
 .story {
     padding: 60px 20px;
 }
 
-
-/* ========================================
-   📸 GALLERY
-======================================== */
-
 .gallery {
     padding: 60px 20px;
-    background-color: #ffffff;
-}
-
-.gallery-grid img {
-    width: 100%;
-    border-radius: 16px;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
+    background-color: #fff;
 }
 
 
 /* ========================================
    🦶 FOOTER
-======================================== */
+   ======================================== */
 
 footer {
     padding: 20px;
@@ -226,41 +222,24 @@ footer {
 
 
 /* ========================================
-   📱 MOBILE OPTIMIZATION
-======================================== */
+   📱 MOBILE RESPONSIVE
+   ======================================== */
 
 @media (max-width: 768px) {
 
     .logo {
-        width: 190px;
-    }
-
-    .brand {
-        font-size: 24px;
+        width: 200px;
     }
 
     h1 {
         font-size: 2.2rem;
-        padding: 0 10px;
     }
 
-    p {
-        font-size: 1.05rem;
-        padding: 0 14px;
+    .nav-links a {
+        margin-left: 16px;
     }
 
-    .card:hover {
-        transform: translateY(-4px);
-    }
-}
-
-@media (max-width: 420px) {
-
-    .logo {
-        width: 170px;
-    }
-
-    .hero {
-        padding-top: 50px;
+    .navbar {
+        padding: 16px 20px;
     }
 }
