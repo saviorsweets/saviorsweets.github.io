@@ -8,10 +8,11 @@
 <meta name="description"
       content="Savior Sweets offers heavenly handcrafted cupcakes baked fresh for every occasion.">
 
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Pinyon+Script&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/png" href="images/favicon.png">
@@ -22,9 +23,13 @@
 <!-- ================= NAVBAR ================= -->
 <nav class="navbar">
   <div class="nav-container">
-   <div class="brand">
-  <div class="brand"><span class="brand-gold">Savior</span><span class="brand-pink">Sweets</span></div>
 
+    <!-- BRAND (FIXED STRUCTURE) -->
+    <div class="brand">
+      <span class="brand-gold">Savior</span><span class="brand-pink">Sweets</span>
+    </div>
+
+    <!-- NAV LINKS -->
     <div class="nav-links" id="navLinks">
       <a href="#flavors">Flavors</a>
       <a href="#story">Our Story</a>
@@ -34,6 +39,7 @@
 
     <!-- Mobile hamburger -->
     <div class="hamburger" id="hamburger">☰</div>
+
   </div>
 </nav>
 
@@ -41,11 +47,11 @@
 <header class="hero">
 
   <img src="images/logo.png"
-     class="logo"
-     alt="Savior Sweets logo"
-     loading="eager"
-     decoding="async"
-     fetchpriority="high">
+       class="logo"
+       alt="Savior Sweets logo"
+       loading="eager"
+       decoding="async"
+       fetchpriority="high">
 
   <h1>Heavenly Cupcakes Made Fresh for Every Occasion</h1>
 
@@ -66,42 +72,32 @@
   <h2>Heavenly Featured Flavors</h2>
   <div class="section-divider">✦</div>
 
-  <!-- ⭐ THIS WRAPPER WAS MISSING -->
   <div class="flavor-grid">
 
-    <!-- Card 1 -->
     <div class="card">
       <picture>
         <source srcset="images/cupcake1.webp" type="image/webp">
-        <img src="images/cupcake1.jpg"
-             loading="lazy"
-             alt="Amazing Grace Vanilla cupcake">
+        <img src="images/cupcake1.jpg" loading="lazy" alt="Amazing Grace Vanilla cupcake">
       </picture>
       <h3>Amazing Grace Vanilla</h3>
       <p>Classic vanilla with smooth buttercream.</p>
       <span>$3.50 | $39/dozen</span>
     </div>
 
-    <!-- Card 2 -->
     <div class="card">
       <picture>
         <source srcset="images/cupcake2.webp" type="image/webp">
-        <img src="images/cupcake2.jpg"
-             loading="lazy"
-             alt="Redemption Red Velvet cupcake">
+        <img src="images/cupcake2.jpg" loading="lazy" alt="Redemption Red Velvet cupcake">
       </picture>
       <h3>Redemption Red Velvet</h3>
       <p>Rich red velvet with cream cheese frosting.</p>
       <span>$3.50 | $39/dozen</span>
     </div>
 
-    <!-- Card 3 -->
     <div class="card">
       <picture>
         <source srcset="images/cupcake3.webp" type="image/webp">
-        <img src="images/cupcake3.jpg"
-             loading="lazy"
-             alt="Blessed Chocolate Bliss cupcake">
+        <img src="images/cupcake3.jpg" loading="lazy" alt="Blessed Chocolate Bliss cupcake">
       </picture>
       <h3>Blessed Chocolate Bliss</h3>
       <p>Deep chocolate topped with chocolate buttercream.</p>
