@@ -160,38 +160,61 @@ h1 {
 
 /* ---------- FLAVORS ---------- */
 
-.flavors {
-    padding: 70px 20px;
-    background: white;
-}
+<section id="flavors" class="flavors">
+    <h2>Heavenly Featured Flavors</h2>
 
-.flavor-grid {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
+    <div class="flavor-grid">
 
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 20px;
-    width: 260px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-    transition: transform .3s ease, box-shadow .3s ease;
-}
+        <!-- 🧁 Amazing Grace Vanilla -->
+        <div class="card fade-in">
 
-.card img {
-    width: 100%;
-    border-radius: 14px;
-    margin-bottom: 12px;
-}
+            <picture>
+                <source srcset="images/cupcake1.webp" type="image/webp">
+                <img src="images/cupcake1.jpg"
+                     loading="lazy"
+                     alt="Amazing Grace Vanilla cupcake">
+            </picture>
 
-.card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 16px 36px rgba(0,0,0,0.10);
-}
+            <h3>Amazing Grace Vanilla</h3>
+            <p>Classic vanilla with smooth buttercream.</p>
+            <span>$3.50 | $39/dozen</span>
+
+        </div>
+
+        <!-- ❤️ Redemption Red Velvet -->
+        <div class="card fade-in">
+
+            <picture>
+                <source srcset="images/cupcake2.webp" type="image/webp">
+                <img src="images/cupcake2.jpg"
+                     loading="lazy"
+                     alt="Redemption Red Velvet cupcake">
+            </picture>
+
+            <h3>Redemption Red Velvet</h3>
+            <p>Rich red velvet with cream cheese frosting.</p>
+            <span>$3.50 | $39/dozen</span>
+
+        </div>
+
+        <!-- 🙏 Blessed Chocolate Bliss -->
+        <div class="card fade-in">
+
+            <picture>
+                <source srcset="images/cupcake3.webp" type="image/webp">
+                <img src="images/cupcake3.jpg"
+                     loading="lazy"
+                     alt="Blessed Chocolate Bliss cupcake">
+            </picture>
+
+            <h3>Blessed Chocolate Bliss</h3>
+            <p>Deep chocolate topped with chocolate buttercream.</p>
+            <span>$3.50 | $39/dozen</span>
+
+        </div>
+
+    </div>
+</section>
 
 /* ---------- GALLERY ---------- */
 
