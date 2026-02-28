@@ -1,119 +1,69 @@
+this is how the code looks: 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ========================================
-         ⚡ PERFORMANCE + SEO
-    ======================================== -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Savior Sweets</title>
-
-    <meta name="description" content="Savior Sweets offers heavenly handcrafted cupcakes baked fresh for every occasion.">
-
-    <!-- Faster font loading -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Pinyon+Script&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Savior Sweets</title>
+    <meta name="description" content="Savior Sweets offers heavenly handcrafted cupcakes baked fresh for every occasion. Order delicious cupcakes today.">
+    <meta name="keywords" content="cupcakes, bakery, Savior Sweets, custom cupcakes, Mission Hills bakery">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Pinyon+Script&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- ========================================
-     🧭 NAVBAR
-======================================== -->
+<header class="hero" role="banner">
+<nav class="navbar" role="navigation">
+<footer role="contentinfo">
+    
 <nav class="navbar">
     <div class="nav-container">
-       <div class="brand">Savior Sweets</div>
-
-        <div class="nav-links" id="navLinks">
+        <div class="brand">Savior Sweets</div>
+        <div class="nav-links">
             <a href="#flavors">Flavors</a>
             <a href="#story">Our Story</a>
             <a href="#gallery">Gallery</a>
-            <a href="order.html" class="nav-order">Order</a>
+            <a href="#" class="nav-order">Order</a>
         </div>
-
-        <!-- 📱 Hamburger -->
-        <div class="hamburger" id="hamburger">☰</div>
     </div>
 </nav>
-
-
-<!-- ========================================
-     🦸 HERO
-======================================== -->
+    
 <header class="hero">
-
-    <div class="logo-glow"></div>
-
-    <div class="logo-wrap fade-in">
-        <img src="images/logo.png"
-             class="logo"
-             alt="Savior Sweets cupcake bakery logo"
-             loading="eager"
-             decoding="async">
-    </div>
-
-    <h1 class="fade-in">
-        Heavenly Cupcakes Made Fresh for Every Occasion
-    </h1>
-
-    <p class="hero-sub fade-in">
-        Handcrafted cupcakes baked with love and covered in grace.
-    </p>
-
-    <div class="buttons fade-in">
+    <img src="images/logo.png" class="logo" alt="Savior Sweets cupcake bakery logo">
+    <h1>Heavenly Cupcakes Made Fresh for Every Occasion</h1>
+    <p>Handcrafted cupcakes baked with love and covered in grace.</p>
+    <div class="buttons">
         <a href="order.html" class="btn-primary">Order Now</a>
         <a href="#flavors" class="btn-secondary">View Flavors</a>
     </div>
-
 </header>
 
-
-<!-- ========================================
-     🍰 FLAVORS
-======================================== -->
 <section id="flavors" class="flavors">
     <h2>Heavenly Featured Flavors</h2>
-
     <div class="flavor-grid">
-
-        <div class="card fade-in">
-            <img src="images/cupcake1.jpg" loading="lazy" alt="Vanilla cupcake">
+        <div class="card">
             <h3>Amazing Grace Vanilla</h3>
             <p>Classic vanilla with smooth buttercream.</p>
             <span>$3.50 | $39/dozen</span>
         </div>
 
-        <div class="card fade-in">
-            <img src="images/cupcake2.jpg" loading="lazy" alt="Red velvet cupcake">
+        <div class="card">
             <h3>Redemption Red Velvet</h3>
             <p>Rich red velvet with cream cheese frosting.</p>
             <span>$3.50 | $39/dozen</span>
         </div>
 
-        <div class="card fade-in">
-            <img src="images/cupcake3.jpg" loading="lazy" alt="Chocolate cupcake">
+        <div class="card">
             <h3>Blessed Chocolate Bliss</h3>
             <p>Deep chocolate topped with chocolate buttercream.</p>
             <span>$3.50 | $39/dozen</span>
         </div>
-
     </div>
 </section>
 
-
-<!-- ========================================
-     📖 STORY
-======================================== -->
-<section id="story" class="story fade-in">
+<section id="story" class="story">
     <h2>Our Story</h2>
     <p>
         Savior Sweets began with a simple mission — to bake with purpose,
@@ -122,50 +72,23 @@
     </p>
 </section>
 
-
-<!-- ========================================
-     📸 GALLERY
-======================================== -->
 <section id="gallery" class="gallery">
     <h2>Photo Gallery</h2>
-
     <div class="gallery-grid">
-        <img src="images/cupcake1.jpg" loading="lazy" alt="Cupcake gallery image">
-        <img src="images/cupcake2.jpg" loading="lazy" alt="Cupcake gallery image">
-        <img src="images/cupcake3.jpg" loading="lazy" alt="Cupcake gallery image">
+        <img src="images/cupcake1.jpg" alt="Vanilla cupcake">
+        <img src="images/cupcake2.jpg" alt="Red velvet cupcake">
+        <img src="images/cupcake3.jpg" alt="Chocolate cupcake">
     </div>
 </section>
 
-
-<!-- ========================================
-     💰 HIGH-CONVERT CTA
-======================================== -->
-<section class="cta">
+    <section class="cta">
     <h2>Ready to Taste Heaven?</h2>
-    <p>Custom cupcakes for birthdays, events, and sweet cravings.</p>
-    <a href="order.html" class="btn-primary">Place Your Order</a>
+    <a href="#" class="btn-primary">Place Your Order</a>
 </section>
-
-
-<!-- ========================================
-     🦶 FOOTER
-======================================== -->
+    
 <footer>
     <p>© 2026 Savior Sweets | Baked with Love. Covered in Grace.</p>
 </footer>
-
-
-<!-- ========================================
-     ⚡ LIGHTWEIGHT JS
-======================================== -->
-<script>
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('navLinks');
-
-hamburger.onclick = () => {
-    navLinks.classList.toggle('show');
-};
-</script>
 
 </body>
 </html>
