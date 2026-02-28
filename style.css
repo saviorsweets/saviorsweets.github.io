@@ -57,9 +57,11 @@ p {
 
 .brand {
     font-family: 'Pinyon Script', cursive;
-    font-size: 32px;
-    color: #8b6a3e;
-    letter-spacing: 0.5px;
+    font-size: 34px;
+    font-weight: 400;
+    color: #b8833b; /* warmer gold to match logo */
+    letter-spacing: 0.6px;
+    line-height: 1;
 }
 
 .nav-links a {
@@ -110,11 +112,11 @@ p {
 /* Logo sizing tuned to your design */
 
 .logo {
-    width: 260px;
-    max-width: 88%;
+    width: 300px;          /* larger = more premium */
+    max-width: 92%;
     height: auto;
     display: block;
-    margin: 0 auto 18px auto;
+    margin: 0 auto 10px auto;
 }
 
 
@@ -234,7 +236,7 @@ footer {
     }
 
     .logo {
-        width: 190px;
+       width: 210px;
     }
 
     h1 {
@@ -250,10 +252,31 @@ footer {
 @media (max-width: 420px) {
 
     .logo {
-        width: 170px;
+       width: 185px;
     }
 
     .hero {
         padding-top: 60px;
     }
+}
+
+/* ========================================
+   ✨ HERO PROFESSIONAL POLISH
+======================================== */
+
+.hero {
+    padding-top: 110px;   /* better vertical balance */
+}
+
+.hero-sub {
+    font-size: 1.15rem;
+    opacity: 0.9;
+    margin-top: 6px;
+}
+
+/* smoother text rendering */
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
