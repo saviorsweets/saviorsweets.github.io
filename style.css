@@ -74,42 +74,36 @@ p {
 /* ================= BRAND (MATCHES LOGO) ================= */
 
 .brand {
-    font-family: 'Pinyon Script', cursive;
-    font-size: 44px;
-    line-height: 0.9;
-    letter-spacing: -0.6px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px; /* Increased size to match logo prominence */
+    line-height: 1;
+    letter-spacing: 0; /* Reset spacing so script letters connect */
     display: flex;
-    align-items: baseline;
+    align-items: center;
     white-space: nowrap;
-    transform: translateY(2px);
+    /* This adds the subtle depth seen in the logo */
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.1)); 
 }
 
 /* GOLD — Savior */
 
 .brand-gold {
-    background: linear-gradient(
-        180deg,
-        #d2a25a 0%,
-        #b7792e 55%,
-        #8f5a1c 100%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    color: #a67c52; /* Exact Bronze-Gold from your logo */
+    -webkit-text-fill-color: #a67c52;
 }
 
 /* PINK — Sweets */
 
 .brand-pink {
-    background: linear-gradient(
-        180deg,
-        #f5a3ab 0%,
-        #e67882 55%,
-        #d96570 100%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    color: #f7a1b5; /* Exact Rose-Pink from your logo */
+    -webkit-text-fill-color: #f7a1b5;
+    margin-left: 2px; /* Slight nudge for better script flow */
 }
 
 
