@@ -1,6 +1,12 @@
-/* ========================================
+/* ========================================================
+   🌸 SAVIOR SWEETS — MASTER STYLESHEET
+   Clean • Responsive • Production Ready
+======================================================== */
+
+
+/* ========================================================
    🌸 GLOBAL — LUXURY BASE
-======================================== */
+======================================================== */
 
 body {
     margin: 0;
@@ -12,6 +18,8 @@ body {
             #ffffff 0%,
             #f4efe9 55%,
             #efe7de 100%);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
@@ -33,14 +41,21 @@ p {
     line-height: 1.6;
 }
 
+.section-divider {
+    color: #c79b52;
+    font-size: 18px;
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
 
-/* ========================================
-   🧭 NAVBAR
-======================================== */
+
+/* ========================================================
+   🧭 NAVBAR — PROFESSIONAL
+======================================================== */
 
 .navbar {
     background: #f7f3ed;
-    padding: 20px 40px;
+    padding: 18px 40px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -55,12 +70,91 @@ p {
     margin: auto;
 }
 
-/* ========================================
+
+/* ================= BRAND (MATCHES LOGO) ================= */
+
+.brand {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 42px;
+    line-height: 1;
+    letter-spacing: -0.4px;
+    display: flex;
+    align-items: baseline;
+    white-space: nowrap;
+}
+
+/* GOLD — Savior */
+
+.brand-gold {
+    background: linear-gradient(
+        180deg,
+        #d2a25a 0%,
+        #b7792e 55%,
+        #8f5a1c 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* PINK — Sweets */
+
+.brand-pink {
+    background: linear-gradient(
+        180deg,
+        #f5a3ab 0%,
+        #e67882 55%,
+        #d96570 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+/* ================= NAV LINKS ================= */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4a3b2b;
+    font-weight: 500;
+    transition: color 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: #c79b52;
+}
+
+/* order button */
+
+.nav-order {
+    background: #c79b52;
+    color: white !important;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+
+/* hamburger */
+
+.hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+
+/* ========================================================
    🦸 HERO — SOFT HALO STYLE
-======================================== */
+======================================================== */
 
 .hero {
-    padding: 90px 20px 70px;
+    padding: 110px 20px 70px;
     position: relative;
 }
 
@@ -80,10 +174,16 @@ p {
     pointer-events: none;
 }
 
-/* Logo sizing tuned to your design */
+.hero-sub {
+    font-size: 1.15rem;
+    opacity: 0.9;
+    margin-top: 6px;
+}
+
+/* Logo sizing */
 
 .logo {
-    width: 360px;          /* ← premium desktop size */
+    width: 360px;
     max-width: 92%;
     height: auto;
     display: block;
@@ -91,9 +191,9 @@ p {
 }
 
 
-/* ========================================
+/* ========================================================
    🔘 BUTTONS
-======================================== */
+======================================================== */
 
 .btn-primary {
     background: #c79b52;
@@ -129,9 +229,9 @@ p {
 }
 
 
-/* ========================================
+/* ========================================================
    🧁 FLAVOR CARDS — PREMIUM FLOAT
-======================================== */
+======================================================== */
 
 .flavors {
     background: #ffffff;
@@ -174,18 +274,18 @@ p {
 }
 
 
-/* ========================================
+/* ========================================================
    📖 STORY
-======================================== */
+======================================================== */
 
 .story {
     padding: 60px 20px;
 }
 
 
-/* ========================================
+/* ========================================================
    🦶 FOOTER
-======================================== */
+======================================================== */
 
 footer {
     background: #4a3b2b;
@@ -194,125 +294,69 @@ footer {
 }
 
 
-/* ========================================
-   📱 MOBILE OPTIMIZATION
-======================================== */
+/* ========================================================
+   📱 MOBILE — RESPONSIVE SYSTEM
+======================================================== */
 
 @media (max-width: 768px) {
 
+    /* brand resize */
+    .brand {
+        font-size: 32px;
+    }
+
+    /* hamburger visible */
+    .hamburger {
+        display: block;
+    }
+
+    /* dropdown menu */
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: white;
+        flex-direction: column;
+        padding: 18px;
+        border-radius: 14px;
+        box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+        display: none;
+        gap: 14px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    /* hero halo */
     .hero::before {
         width: 420px;
         height: 420px;
         top: -80px;
     }
 
+    /* logo resize */
     .logo {
-    width: 240px;
-}
+        width: 240px;
+    }
 
     h1 {
         font-size: 2.2rem;
         padding: 0 10px;
     }
-
-    .nav-links {
-        display: none;
-    }
 }
 
 @media (max-width: 420px) {
 
-    .logo {
-    width: 210px;
-}
-
-    .hero {
-        padding-top: 60px;
-    }
-}
-
-/* ========================================
-   📱 MOBILE BRAND TUNING
-======================================== */
-
-@media (max-width: 768px) {
-    .brand {
-        font-size: 32px;
-    }
-}
-
-@media (max-width: 420px) {
     .brand {
         font-size: 28px;
     }
-}
 
-/* ========================================
-   ✨ NAVBAR SCRIPT — TRUE LOGO MATCH
-======================================== */
+    .logo {
+        width: 210px;
+    }
 
-.brand {
-    font-family: 'Pinyon Script', cursive;
-    font-size: 46px;          /* slightly larger for elegance */
-    line-height: 0.88;
-    letter-spacing: -0.5px;   /* tighter script flow */
-    display: inline-flex;
-    align-items: baseline;
-    white-space: nowrap;
-    transform: translateY(3px); /* better optical alignment */
-}
-
-/* GOLD — Savior */
-
-.brand-gold {
-    background: linear-gradient(
-    180deg,
-    #d2a25a 0%,
-    #b7792e 55%,
-    #8f5a1c 100%
-);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow:
-        0 1px 0 rgba(0,0,0,0.05),
-        0 2px 4px rgba(0,0,0,0.08);
-}
-
-/* PINK — Sweets */
-
-.brand-pink {
-    background: linear-gradient(
-    180deg,
-    #f5a3ab 0%,
-    #e67882 55%,
-    #d96570 100%
-);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow:
-        0 1px 0 rgba(0,0,0,0.05),
-        0 2px 4px rgba(0,0,0,0.08);
-}
-
-/* ========================================
-   ✨ HERO PROFESSIONAL POLISH
-======================================== */
-
-.hero {
-    padding-top: 110px;   /* better vertical balance */
-}
-
-.hero-sub {
-    font-size: 1.15rem;
-    opacity: 0.9;
-    margin-top: 6px;
-}
-
-/* smoother text rendering */
-
-body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    .hero {
+        padding-top: 70px;
+    }
 }
