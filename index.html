@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Savior Sweets</title>
 
+<meta name="description"
+      content="Savior Sweets offers heavenly handcrafted cupcakes baked fresh for every occasion.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -21,12 +24,15 @@
   <div class="nav-container">
     <div class="brand">Savior Sweets</div>
 
-    <div class="nav-links">
+    <div class="nav-links" id="navLinks">
       <a href="#flavors">Flavors</a>
       <a href="#story">Our Story</a>
       <a href="#gallery">Gallery</a>
       <a href="order.html" class="nav-order">Order</a>
     </div>
+
+    <!-- Mobile hamburger -->
+    <div class="hamburger" id="hamburger">☰</div>
   </div>
 </nav>
 
@@ -36,7 +42,8 @@
   <img src="images/logo.png"
        class="logo"
        alt="Savior Sweets logo"
-       loading="eager">
+       loading="eager"
+       decoding="async">
 
   <h1>Heavenly Cupcakes Made Fresh for Every Occasion</h1>
 
@@ -55,13 +62,18 @@
 <section id="flavors" class="flavors">
 
   <h2>Heavenly Featured Flavors</h2>
+  <div class="section-divider">✦</div>
 
- <div class="section-divider">✦</div>
+  <!-- ⭐ THIS WRAPPER WAS MISSING -->
+  <div class="flavor-grid">
+
     <!-- Card 1 -->
     <div class="card">
       <picture>
         <source srcset="images/cupcake1.webp" type="image/webp">
-        <img src="images/cupcake1.jpg" alt="Vanilla cupcake">
+        <img src="images/cupcake1.jpg"
+             loading="lazy"
+             alt="Amazing Grace Vanilla cupcake">
       </picture>
       <h3>Amazing Grace Vanilla</h3>
       <p>Classic vanilla with smooth buttercream.</p>
@@ -72,7 +84,9 @@
     <div class="card">
       <picture>
         <source srcset="images/cupcake2.webp" type="image/webp">
-        <img src="images/cupcake2.jpg" alt="Red velvet cupcake">
+        <img src="images/cupcake2.jpg"
+             loading="lazy"
+             alt="Redemption Red Velvet cupcake">
       </picture>
       <h3>Redemption Red Velvet</h3>
       <p>Rich red velvet with cream cheese frosting.</p>
@@ -83,7 +97,9 @@
     <div class="card">
       <picture>
         <source srcset="images/cupcake3.webp" type="image/webp">
-        <img src="images/cupcake3.jpg" alt="Chocolate cupcake">
+        <img src="images/cupcake3.jpg"
+             loading="lazy"
+             alt="Blessed Chocolate Bliss cupcake">
       </picture>
       <h3>Blessed Chocolate Bliss</h3>
       <p>Deep chocolate topped with chocolate buttercream.</p>
@@ -106,6 +122,16 @@
 <footer>
   © 2026 Savior Sweets | Baked with Love. Covered in Grace.
 </footer>
+
+<!-- ================= MOBILE MENU JS ================= -->
+<script>
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.onclick = () => {
+  navLinks.classList.toggle('show');
+};
+</script>
 
 </body>
 </html>
