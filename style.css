@@ -56,64 +56,54 @@ p {
 }
 
 /* ========================================
-   ✨ NAVBAR LOGO — PREMIUM SCRIPT MATCH
+   ✨ NAVBAR SCRIPT — LOGO MATCH
 ======================================== */
 
 .brand {
-    font-family: 'Great Vibes', cursive;
-    font-size: 38px;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 40px;
     line-height: 1;
-    letter-spacing: 0.4px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
+    letter-spacing: 0.2px;
+    display: inline-flex;
+    align-items: baseline;
+    white-space: nowrap;
 }
 
-/* GOLD PART */
+/* GOLD — Savior */
 
 .brand-gold {
     background: linear-gradient(
-        135deg,
-        #b7792e 0%,
-        #d4a25a 50%,
-        #a86c25 100%
+        180deg,
+        #c6924a 0%,
+        #a86c25 60%,
+        #8f5a1c 100%
     );
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+
+    /* subtle depth */
+    text-shadow:
+        0 1px 0 rgba(0,0,0,0.05),
+        0 2px 4px rgba(0,0,0,0.08);
 }
 
-/* PINK PART */
+/* PINK — Sweets */
 
 .brand-pink {
     background: linear-gradient(
-        135deg,
-        #f08a94 0%,
-        #ffb3bb 50%,
-        #e67882 100%
+        180deg,
+        #f3a0a8 0%,
+        #e67882 60%,
+        #d96570 100%
     );
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-}
 
-.nav-links a {
-    margin-left: 25px;
-    text-decoration: none;
-    color: #4a3b2b;
-    font-weight: 500;
-    transition: color 0.25s ease;
-}
-
-.nav-links a:hover {
-    color: #c79b52;
-}
-
-.nav-order {
-    background: #c79b52;
-    color: white !important;
-    padding: 8px 18px;
-    border-radius: 20px;
+    text-shadow:
+        0 1px 0 rgba(0,0,0,0.05),
+        0 2px 4px rgba(0,0,0,0.08);
 }
 
 
@@ -307,6 +297,54 @@ footer {
     .brand {
         font-size: 28px;
     }
+}
+
+/* ========================================
+   ✨ NAVBAR SCRIPT — TRUE LOGO MATCH
+======================================== */
+
+.brand {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 0.2px;
+    display: inline-flex;
+    align-items: baseline;
+    white-space: nowrap;
+}
+
+/* GOLD — Savior */
+
+.brand-gold {
+    background: linear-gradient(
+        180deg,
+        #c6924a 0%,
+        #a86c25 60%,
+        #8f5a1c 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow:
+        0 1px 0 rgba(0,0,0,0.05),
+        0 2px 4px rgba(0,0,0,0.08);
+}
+
+/* PINK — Sweets */
+
+.brand-pink {
+    background: linear-gradient(
+        180deg,
+        #f3a0a8 0%,
+        #e67882 60%,
+        #d96570 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow:
+        0 1px 0 rgba(0,0,0,0.05),
+        0 2px 4px rgba(0,0,0,0.08);
 }
 
 /* ========================================
