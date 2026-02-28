@@ -55,14 +55,46 @@ p {
     margin: auto;
 }
 
+/* ========================================
+   ✨ NAVBAR LOGO — PREMIUM SCRIPT MATCH
+======================================== */
+
 .brand {
     font-family: 'Pinyon Script', cursive;
-    font-size: 36px;
-    font-weight: 400;
-    color: #b7792e; /* closer to logo gold */
-    letter-spacing: 0.4px;
+    font-size: 38px;
     line-height: 1;
-    transform: translateY(2px); /* optical alignment */
+    letter-spacing: 0.4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* GOLD PART */
+
+.brand-gold {
+    background: linear-gradient(
+        135deg,
+        #b7792e 0%,
+        #d4a25a 50%,
+        #a86c25 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* PINK PART */
+
+.brand-pink {
+    background: linear-gradient(
+        135deg,
+        #f08a94 0%,
+        #ffb3bb 50%,
+        #e67882 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .nav-links a {
