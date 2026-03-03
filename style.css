@@ -182,7 +182,7 @@ p {
     max-width: 90%;     /* Prevents it from touching the screen edges */
     height: auto;
     display: block;
-    margin: -70px auto 10px;
+    margin: -80px auto 10px;
     transition: width 0.3s ease; /* Smooth transition when resizing */
 }
 
