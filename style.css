@@ -190,7 +190,7 @@ p {
 
 @media (max-width: 768px) {
     .logo {
-        width: 320px;   /* Adjusted size for Mobile Screens */
+        width: 350px;   /* Adjusted size for Mobile Screens */
         margin-bottom: 10px;
     }
     
