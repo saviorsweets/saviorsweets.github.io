@@ -178,7 +178,7 @@ p {
 /* ================= LOGO SIZING & RESPONSIVENESS ================= */
 
 .logo {
-    width: 850px;       /* Increased size for Desktop */
+    width: 1050px;       /* Increased size for Desktop */
     max-width: 90%;     /* Prevents it from touching the screen edges */
     height: auto;
     display: block;
